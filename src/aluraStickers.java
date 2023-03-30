@@ -1,4 +1,6 @@
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -10,21 +12,31 @@ public class aluraStickers {
     public static void main(String[] args) throws Exception {
         //make an HTTP connection and fetch the top 250 movies
 
-        String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/MostPopularMovies.json";
+        String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
         URI address = URI.create(url);
         var client = HttpClient.newHttpClient();
         var request = HttpRequest.newBuilder(address).GET().build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         String json = response.body();
 
-        // extrair só os dados que interessam (titulo, poster, classificação)
+        // extract only the data of interest (title, poster, rating)
 
         var parser = new jsonParser();
         List<Map<String, String>> listaDeFilmes = parser.parse(json);
 
-        // exibir e manipular os dados
+        // display and manipulate data
 
         for (Map<String, String> filme : listaDeFilmes) {
+
+            String urlImagem = filme.get("image");
+            String titulo = filme.get("title");
+
+            InputStream inputStream = new URL(urlImagem).openStream();
+            String nomeArquivo = titulo + ".png";
+
+            var geradora = new geradorDeFigurinhas();
+            geradora.cria(inputStream, nomeArquivo);
+
             System.out.println("\u001b[37m\u001b[40m\u001b[1m");
             System.out.println(filme.get("image"));
             System.out.println();
@@ -32,6 +44,8 @@ public class aluraStickers {
             System.out.println();
             System.out.println(filme.get("title"));
             System.out.println("\u001b[0m");
+
+
             
         }
 
