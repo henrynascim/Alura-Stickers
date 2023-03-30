@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8e4bcb9-8c11-41ec-966f-d0e101665510" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/12 Angry Men.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pulp Fiction.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Schindler's List.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/The Dark Knight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/The Godfather" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/The Godfather.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/The Good, the Bad and the Ugly.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/The Lord of the Rings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/The Shawshank Redemption.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entrada/filme.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saida/figurinha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geradorDeFigurinhas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aluraStickers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aluraStickers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geradorDeFigurinhas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geradorDeFigurinhas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +70,7 @@
       <workItem from="1680138073402" duration="1114000" />
       <workItem from="1680139750555" duration="6057000" />
       <workItem from="1680147229812" duration="81000" />
+      <workItem from="1680190422431" duration="473000" />
     </task>
     <servers />
   </component>

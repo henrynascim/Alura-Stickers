@@ -34,6 +34,7 @@ public class geradorDeFigurinhas {
             graphics.drawImage(imagemOriginal, null,0, 0 );
 
             // Configurar a fonte
+
             var fonte = new Font(Font.SANS_SERIF, Font.ITALIC, 100);
             graphics.setColor(RED);
             graphics.setFont(fonte);
@@ -43,6 +44,7 @@ public class geradorDeFigurinhas {
             graphics.drawString("SAD BOY" , 0 , novaAltura - 100);
 
             // escrever em um arquivo
+
             ImageIO.write(novaImagem, "png", new File(nomeArquivo));
 
 
