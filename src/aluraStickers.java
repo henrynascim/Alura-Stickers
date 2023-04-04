@@ -28,7 +28,7 @@ public class aluraStickers {
 
             System.out.println(conteudo.getTitulo());
             System.out.println();
-            
+
         }
     }
 }
